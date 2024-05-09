@@ -18,7 +18,7 @@ Of those two ports, port 5000 is a custom developed web application, that when v
 - "To obtain a token, you need to find the endpoint in the correct place. However, its important that you can't use it where you're not supposed to. The place where the administrators rest."
 
 Basically you need to find the authentication endpoint first to start off. This can be done by running a gobuster scan of the host. The endpoint that the user's are looking for are in the common.txt wordlist but does require the html extension to be found. This can be done using any tool such as GoBuster or DirB, but once that is completed the users will find:
-- http://<IP>:5000/authuser.html
+- http://`<IP>`:5000/authuser.html
 
 Accessing the endpoint return a JWT token and sets it as a cookie. The token would look something like this:
 - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.ey<Reduced>.Dfvu9tWKnGRPtfO5rAK9gszPWEp1Rxcnrj5APF3yxZM
