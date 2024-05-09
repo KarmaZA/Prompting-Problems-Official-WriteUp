@@ -59,8 +59,8 @@ The final lines in this file contain the following infomration
 if _name_ == '_main_':
     app.run(host='0.0.0.0', port=5000, debug=True)
     # ensure that you're running this as sudo to prevent authorisation issues
-    # My password is Meliolikespie123
-
+    # My password is `Melio*******`
+    
 This passwords can then be used to su into the melio-app-dev user.
 
 The final step of this challenge is to get to root. A simple sudo -l for melio-app-dev shows that they can run python as root:
